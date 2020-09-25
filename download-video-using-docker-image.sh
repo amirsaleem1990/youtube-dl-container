@@ -1,6 +1,6 @@
 #!/bin/bash
 url=$1
-if [[ url == "" ]] ; then
+if [[ $url == "" ]] ; then
 	read -p "please Enter you video url: " url
 fi
 name=`youtube-dl --get-filename $url`

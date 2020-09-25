@@ -1,3 +1,3 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install -y  youtube-dl
+RUN 6 | apt-get install -y  youtube-dl

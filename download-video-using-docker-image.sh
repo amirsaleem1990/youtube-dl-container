@@ -5,6 +5,4 @@ if [[ $url == "" ]] ; then
 fi
 name=`/home/amir/.local/bin/youtube-dl --get-filename $url`
 name=`echo "/media/$name" | sed 's/\ /-/g' | sed 's/-\{1,\}/-/g'`
-# echo $name
-echo $url
 sudo docker run -v `pwd`:/media youtube-dl-image $url -o $name
